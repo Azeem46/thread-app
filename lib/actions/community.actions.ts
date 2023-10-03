@@ -1,11 +1,9 @@
 "use server";
 
 import { FilterQuery, SortOrder } from "mongoose";
-
 import Community from "../models/community.model";
 import Thread from "../models/thread.model";
 import User from "../models/user.model";
-
 import { connectToDB } from "../mongoose";
 
 export async function createCommunity(
@@ -43,7 +41,6 @@ export async function createCommunity(
 
     return createdCommunity;
   } catch (error) {
-    // Handle any errors
     console.error("Error creating community:", error);
     throw error;
   }
@@ -64,7 +61,6 @@ export async function fetchCommunityDetails(id: string) {
 
     return communityDetails;
   } catch (error) {
-    // Handle any errors
     console.error("Error fetching community details:", error);
     throw error;
   }
@@ -97,7 +93,6 @@ export async function fetchCommunityPosts(id: string) {
 
     return communityPosts;
   } catch (error) {
-    // Handle any errors
     console.error("Error fetching community posts:", error);
     throw error;
   }
@@ -143,7 +138,6 @@ export async function fetchCommunities({
       .skip(skipAmount)
       .limit(pageSize)
       .populate("members");
-
     // Count the total number of communities that match the search criteria (without pagination).
     const totalCommunitiesCount = await Community.countDocuments(query);
 
@@ -195,7 +189,6 @@ export async function addMemberToCommunity(
 
     return community;
   } catch (error) {
-    // Handle any errors
     console.error("Error adding member to community:", error);
     throw error;
   }
