@@ -10,13 +10,11 @@ import {
   FormField,
   FormItem,
   FormLabel,
-  FormMessage,
 } from "@/components/ui/form";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { CommentValidation } from "@/lib/validations/thread";
-import { updateUser } from "@/lib/actions/user.actions";
-import { addCommentToThread, createThread } from "@/lib/actions/thread.actions";
+import { addCommentToThread } from "@/lib/actions/thread.actions";
 import Image from "next/image";
 
 
