@@ -100,9 +100,6 @@ isComment
                         </div>
                     </div>
                 </div>
-                {/* TODO: Delete thread
-                show comment logo */}
-                //console.log("commu",community)
                 {!isComment && community && (
                     <Link href={`/communities/${community.id}`} className="mt-5 flex items-center">
                         <p className="text-subtle-medium text-gray-1">
