@@ -19,7 +19,6 @@ async function Page () {
         </h1>
         <PostThread userId={userInfo._id} />
         </>
-        
     )
 }
 
