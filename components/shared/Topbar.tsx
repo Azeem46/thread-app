@@ -15,7 +15,7 @@ function Topbar () {
             <p className="text-heading3-bold
             text-light-1 max-xs:hidden"
             >
-                Threads
+                IdeaShare 2.O
             </p>
         </Link>
         <div className="flex items-center gap-1"> 
