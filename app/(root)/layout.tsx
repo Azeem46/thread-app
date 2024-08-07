@@ -9,7 +9,7 @@ import Topbar from "@/components/shared/Topbar"
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-    title: "IdeaShare 2.O",
+    title: "Thread",
     description: "A Next.js 13 Meta Threads Application"
 }
 
